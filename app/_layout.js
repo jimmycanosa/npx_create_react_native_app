@@ -3,7 +3,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default () => {
   const router = useRouter();
-  
+
   return (
     <Stack
       screenOptions={{
@@ -23,7 +23,17 @@ export default () => {
     >
       {/* do this if you want static layout and will be applied to all */}
       <Stack.Screen name='index' options={{ title: 'Home_layout.js' }} />
-      <Stack.Screen name='modal' options={{ presentation: 'modal' }} />
+      <Stack.Screen
+        name='modal'
+        options={{
+          presentation: 'modal',
+          headerStyle: {
+            backgroundColor: 'yellow',
+          },
+          headerTintColor: 'black',
+        }}
+      />
+      <Stack.Screen name='home' options={{ headerShown: false }} />
     </Stack>
   );
 };
