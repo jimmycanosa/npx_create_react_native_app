@@ -11,7 +11,8 @@ import { Ionicons } from '@expo/vector-icons';
 // const router = useRouter();
 
 export default function Page() {
-  return <Redirect href={'/home'} />;
+  return <Redirect href='/home' />;
+//  return <Redirect href={'/home'} />;
 //   const router = useRouter();
 
 //   return (
