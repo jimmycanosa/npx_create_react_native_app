@@ -19,7 +19,7 @@ export default function Page() {
       {/* do this for dynamic layout */}
       <Stack.Screen
         options={{
-          title: 'Index',
+          title: 'Home',
           headerRight: () => (
             <Ionicons
               onPress={() => router.push('/modal')}

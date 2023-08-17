@@ -27,6 +27,7 @@ export default () => {
         name='modal'
         options={{
           presentation: 'modal',
+          title: 'Modal',
           headerStyle: {
             backgroundColor: 'yellow',
           },
