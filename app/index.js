@@ -1,5 +1,6 @@
-import { Link } from 'expo-router';
+import { Link, Stack } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 const users = [
   { username: 'AMutia', name: 'Alex' },
@@ -10,6 +11,13 @@ const users = [
 export default function Page() {
   return (
     <View style={styles.container}>
+      {/* do this for dynamic layout */}
+      {/* <Stack.Screen options={{ 
+        title: 'Home-index.js',
+        headerRight: () => (
+          <Ionicons name="ios-information-circle-outline" size={30} color="black" />
+        ),
+        }} /> */}
       <View style={styles.main}>
         <Text style={styles.title}>Hello World</Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
@@ -45,7 +53,7 @@ const styles = StyleSheet.create({
     color: '#38434D',
   },
   link: {
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: 'bold',
   },
 });
