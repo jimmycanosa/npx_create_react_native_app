@@ -2,8 +2,8 @@ import { View, Text } from 'react-native';
 
 const modal = () => {
   return (
-    <View>
-      <Text>Modal</Text>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 30 }}>Modal</Text>
     </View>
   );
 };

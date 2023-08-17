@@ -10,7 +10,7 @@ const profile = () => {
       <Stack.Screen
         options={{
           title: username,
-          headerStyle: { backgroundColor: 'white' },
+          headerStyle: { backgroundColor: 'orange' },
           headerTintColor: 'black',
         }}
       />
