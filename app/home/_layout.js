@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
 import { FontAwesome5 } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 export default () => {
   return (
@@ -17,16 +17,17 @@ export default () => {
         name='search'
         options={{
           tabBarIcon: ({ color }) => (
-            <FontAwesome5 name="search" size={24} color={color} />
+            <FontAwesome5 name='search' size={24} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name='message'
+        name='messages'
         options={{
           tabBarIcon: ({ color }) => (
-            <AntDesign name="message1" size={24} color={color} />
+            <FontAwesome name='envelope' size={24} color={color} />
           ),
+          headerShown: false,
         }}
       />
     </Tabs>
