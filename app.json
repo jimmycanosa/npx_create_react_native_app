@@ -1,8 +1,11 @@
 {
   "expo": {
+    "name": "Expo Router",
+    "slug": "ExpoRouter",
     "scheme": "acme",
     "web": {
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "static"
     },
     "plugins": [
       "expo-router"
